@@ -1,3 +1,1 @@
-<p>
-	App Works
-</p>
+<view data-view="navigation"></view>

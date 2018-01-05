@@ -81,8 +81,8 @@ var loader_1 = __webpack_require__(2);
 var main = /** @class */ (function () {
     function main(loader) {
         this.loader = loader;
-        this.loader.loadMain();
         this.loader.load();
+        this.loader.loadMain();
         this.loader.link();
     }
     return main;
@@ -109,7 +109,9 @@ var Loader = /** @class */ (function () {
         linkHelper();
     };
     Loader.prototype.loadMain = function () {
-        $("view-outlet").load("./view/main.php");
+        $("view-outlet").load("./view/main.php", function () {
+            loadHelper("view");
+        });
     };
     return Loader;
 }());
@@ -126,6 +128,7 @@ function loadHelper(pass) {
 }
 function linkHelper() {
     $(document).on("click", '[data-link]', function (event) {
+        event.preventDefault();
         var rview = $(this).attr("data-link");
         $("view-outlet").load("./view/" + rview + ".php");
     });

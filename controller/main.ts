@@ -3,8 +3,8 @@ import Loader from './loader';
 
 class main {
 	constructor(private loader:Loader) {
-		this.loader.loadMain();
 		this.loader.load();
+		this.loader.loadMain();
 		this.loader.link();
 	}
 }

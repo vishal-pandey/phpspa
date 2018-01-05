@@ -9,7 +9,9 @@ export default class Loader{
 		linkHelper();
 	}
 	loadMain(){
-		$("view-outlet").load("./view/main.php");
+		$("view-outlet").load("./view/main.php", function(){
+			loadHelper("view");
+		});
 	}
 
 }
@@ -27,6 +29,7 @@ function loadHelper(pass){
 
 function linkHelper(){
 	$(document).on("click", '[data-link]', function(event) { 
+		event.preventDefault();
     let rview = $(this).attr("data-link");
 		$("view-outlet").load("./view/"+rview+".php");
 	});
