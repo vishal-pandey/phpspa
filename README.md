@@ -1,5 +1,5 @@
 # PHP SPA
-PHP Based Single Page Application Using JavaScript and Jquery
+PHP Based Single Page Application Using JavaScript Jquery php and typescript
 
 It Is An MVC Framework where
 

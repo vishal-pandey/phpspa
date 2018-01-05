@@ -1,0 +1,29 @@
+{
+  "name": "phpspa",
+  "version": "1.0.0",
+  "description": "PHP Based Single Page Application Using JavaScript Jquery php and typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishal-pandey/phpspa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishal-pandey/phpspa/issues"
+  },
+  "homepage": "https://github.com/vishal-pandey/phpspa#readme",
+  "devDependencies": {
+    "ts-loader": "^3.2.0",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "@types/jquery": "^3.2.17",
+    "jquery": "^3.2.1",
+    "requirejs": "^2.3.5"
+  }
+}
